@@ -28,7 +28,7 @@ export class ProductRepository {
         return this.products.find(p=> p.id == id);
     }
 
-    getCategories():String[]{
+    getCategories():string[]{
         return this.categories;
     }
     
