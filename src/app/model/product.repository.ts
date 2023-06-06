@@ -31,5 +31,7 @@ export class ProductRepository {
     getCategories():string[]{
         return this.categories;
     }
+
+    
     
 }
