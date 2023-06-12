@@ -6,4 +6,5 @@ import { Cart } from "./cart.model";
 @NgModule({
     providers: [ProductRepository,StaticDataSource,Cart]
 })
+
 export class ModelModule{}
