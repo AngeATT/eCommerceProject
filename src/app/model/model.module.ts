@@ -8,7 +8,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
     imports: [HttpClientModule],
-    providers: [ProductRepository,RestDataSource,Cart,Order,OrderRepository],
+    providers: [ProductRepository,RestDataSource,Cart,Order,OrderRepository, RestDataSource],
     declarations: [
       Order
     ]
