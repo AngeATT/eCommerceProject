@@ -11,19 +11,20 @@ export class AuthComponent {
   password?: string;
   errorMsg?: string;
 
-  constructor(private router: Router, private auth: AuthService){}
+  constructor(private router: Router, private auth: AuthService) { }
 
-  authenticate(form: NgForm){
-    if(form.valid){
+  authenticate(form: NgForm) {
+    console.log(form);
+    if (true) {
       this.auth.authenticate(this.username ?? "", this.password ?? "")
-      .subscribe( response => {
-        if (response){
-          this.router.navigateByUrl("admin/main");
-        }
-        this.errorMsg = "Authentification echouée"
-      })
-    }else{
+        .subscribe(response => {
+          if (response) {
+            this.router.navigateByUrl("admin/main");
+          }
+          this.errorMsg = "Authentification echouée"
+        })
+    } else {
       this.errorMsg = "Formulaire invalide";
     }
-    }
+  }
 }
