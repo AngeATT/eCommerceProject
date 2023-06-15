@@ -4,4 +4,4 @@ import { Router } from "@angular/router";
 @Component({
     templateUrl: "admin.component.html"
 })
-export class AdminComponent{constructor(router: Router){}}
+export class AdminComponent{}

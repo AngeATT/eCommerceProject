@@ -13,7 +13,7 @@ export class AuthComponent {
 
   constructor(private router: Router, private auth: AuthService){}
 
-  authenticate(form: NgForm, ){
+  authenticate(form: NgForm){
     if(form.valid){
       this.auth.authenticate(this.username ?? "", this.password ?? "")
       .subscribe( response => {
