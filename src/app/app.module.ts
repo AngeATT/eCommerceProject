@@ -7,10 +7,12 @@ import { RouterModule } from '@angular/router';
 import { StoreComponent } from './store/store.component';
 import { CartDetailsComponent } from './store/cart-details/cart-details.component';
 import { CheckoutComponent } from './store/checkout/checkout.component';
+import { AuthComponent } from './admin/auth/auth.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthComponent
   ],
   imports: [BrowserModule,StoreModule,
     RouterModule.forRoot([
