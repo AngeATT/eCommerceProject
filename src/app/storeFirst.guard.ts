@@ -18,6 +18,7 @@ export class StoreFirstGuard {
             if (route.component != StoreComponent) {
                 this.router.navigateByUrl("/");
                 return false;
+                
             }
         }
         return true;

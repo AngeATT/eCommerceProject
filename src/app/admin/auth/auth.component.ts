@@ -15,7 +15,7 @@ export class AuthComponent {
 
   authenticate(form: NgForm) {
     console.log(form);
-    if (true) {
+    if (form.valid) {
       this.auth.authenticate(this.username ?? "", this.password ?? "")
         .subscribe(response => {
           if (response) {

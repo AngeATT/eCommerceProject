@@ -31,4 +31,7 @@ export class ProductRepository {
     getCategories():string[]{
         return this.categories;
     }
+    deleteProduct(id : number){
+        this.dataSource.deleteProduct;
+    }
 }
